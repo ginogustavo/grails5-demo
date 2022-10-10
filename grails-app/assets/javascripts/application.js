@@ -9,3 +9,14 @@
 //= require popper.min
 //= require bootstrap
 //= require_self
+
+
+$("#grade1, #grade2, #grade3, #finalGrade").change(function(){
+    const g1 = parseFloat($("#grade1").val()) *0.23;
+    const g2 = parseFloat($("#grade2").val()) *0.23;
+    const g3 = parseFloat($("#grade3").val()) *0.23;
+    const fg = parseFloat($("#finalGrade").val()) *0.31;
+
+    const result = g1+g2+g3+fg;
+    $("#testGrade").val(result.toFixed(2).toString().replace(".","," ))
+})

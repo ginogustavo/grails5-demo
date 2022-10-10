@@ -15,7 +15,7 @@ class User {
         password(nullable:true, blank:false, password:true)
         firstName(nullable:true, blank:false)
         lastName(nullable:true, blank:false)
-        gender inList ['M','F']
+        gender inList:['M','F']
         birthday(nullable:false, blank: false)
     }
 
